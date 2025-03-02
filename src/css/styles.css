@@ -1,0 +1,109 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 0;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.gallery-item {
+  list-style: none;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.feedback-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  width: 360px;
+  height: 192px;
+  margin: 24px 24px;
+}
+
+.feedback-label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.feedback-input {
+  width: 360px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  transition: border 0.3s ease, transform 0.3s ease;
+}
+
+.feedback-txt {
+  width: 360px;
+  height: 80px;
+  resize: none;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  transition: border 0.3s ease, transform 0.3s ease;
+}
+
+.feedback-input::placeholder,
+.feedback-txt::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.feedback-input:hover,
+.feedback-txt:hover {
+  border: 1px solid #000;
+}
+
+.feedback-input:focus,
+.feedback-txt:focus {
+  border: 1px solid #808080;
+}
+
+.feedback-input:focus::placeholder,
+.feedback-txt:focus::placeholder {
+  color: #2e2f42;
+}
+
+.feedback-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  background: #4e75ff;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.feedback-btn:hover,
+.feedback-btn:focus {
+  background: #6c8cff;
+}
