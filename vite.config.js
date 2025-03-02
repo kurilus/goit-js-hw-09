@@ -33,6 +33,7 @@ export default defineConfig(({ command }) => {
             return 'assets/[name]-[hash][extname]';
           },
         },
+        external: ['simplelightbox'], // Додаємо simplelightbox як зовнішній модуль
       },
       outDir: '../dist',
       emptyOutDir: true,
