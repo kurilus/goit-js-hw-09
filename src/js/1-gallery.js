@@ -64,7 +64,8 @@ const images = [
   },
 ];
 
-import SimpleLightbox from 'simplelightbox/dist/simple-lightbox.min.js';
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const galleryContainer = document.querySelector('.gallery');
 
